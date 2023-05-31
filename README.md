@@ -17,8 +17,8 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 | Id | Software | Version | Tipo |
 |----|----------|---------|------|
 |    | Fritzing |         |Modelado|
-|    | Wokwi    |         |      |
-|    | Node-RED |         |Programación      |
+|    | Wokwi    |         | Programación |
+|    | Node-RED |         |Programación |
 
 ## Historias de Uusario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
