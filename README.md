@@ -1,9 +1,12 @@
-# ProjectDDI
+# ProjectVetSafe3000
 ## Objetivo del proyceto
-
+El presente proyecto busca disminuir los accidentes viales de los ciclistas por medio de un chaleco mejorado, al cual se le integra TI para realizar predeterminas acciones que aumenten su seguridad. 
 ## Integrantes
-- Juan Luis Negrete Labrada
+- Pedro Emmanuel Martinez Rodriguez 
 - María Guadalupe Mendoza Ramírez
+- Juan Luis Negrete Labrada
+- Paola Guadalupe Patlán Gónzalez
+
 
 ## Hardware 
 | No. | Componente | Descripción | Img | Costo | Cantidad |
@@ -13,9 +16,9 @@
 ## Tabla de Software utilizado
 | Id | Software | Version | Tipo |
 |----|----------|---------|------|
-|    |          |         |      |
-|    |          |         |      |
-|    |          |         |      |
+|    | Fritzing |         |Modelado|
+|    | Wokwi    |         |      |
+|    | Node-RED |         |Programación      |
 
 ## Historias de Uusario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
