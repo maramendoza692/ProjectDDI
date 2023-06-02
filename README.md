@@ -1,4 +1,4 @@
-# ProjectVetSafe3000
+# ProjectVestSafe3000
 ## Objetivo del proyceto
 El presente proyecto busca disminuir los accidentes viales de los ciclistas por medio de un chaleco mejorado, al cual se le integra TI para realizar predeterminas acciones que aumenten su seguridad. 
 ## Integrantes
