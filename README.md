@@ -21,6 +21,7 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 | S1 | Fritzing |         |Modelado|
 | S2 | Wokwi    |         | Programación / Modelado |
 | S3 | Node-RED |         |Programación |
+| S4 | Tinkercad |         |Modelado 3D |
 
 ## Historias de Usuario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
@@ -42,3 +43,4 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 ## Placa PCB
 
 ## Prototipo en 3D
+
