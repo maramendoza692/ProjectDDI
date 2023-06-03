@@ -37,10 +37,14 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
+![Imagen de WhatsApp 2023-06-03 a las 00 55 32](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/c1fd84f6-b6bf-4043-98c8-66b3efdea064)
 
 ## Prototipo en Fitzing
 
 ## Placa PCB
 
 ## Prototipo en 3D
+- Imagen de prototipo realizado en tinkercad
+![Captura de pantalla 2023-06-03 142936](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/9e7a4027-dd06-4565-81cf-60c1d9dab557)
+![Captura de pantalla 2023-06-03 142947](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/2e41cbf7-1afe-4a95-b7d1-6e0416e918e3)
 
