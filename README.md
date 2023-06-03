@@ -30,6 +30,9 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 |HU03|Yo como usuario quiero visualizar en la pantalla del dispositivo la temperatura y humedad|Debe|3 días|Visualizar la temperatura y humedad en la pantalla, acercar un objeto con fuego como un encendedor cerca del sensor para visualizar el cambio de la temperatura en la pantalla. Realizar la misma pueba con un objeto que altere la humedad| Paola Patlán |
 |HU04|Yo como usuario quiero visualizar mi ubicación en la pantalla mediante un mapa para saber dónde me encuentro| Puede |10 días| Seleccionar el botón "Ver ubicación" en la pantalla del dispositivo, en seguida, visualizar el mapa y la ubicación actual. Avanzar un par de metros y observar que la ubicción cambia |María Mendoza|
 |HU05|Yo como usuario quiero que el dispositivo tenga conexión inhalámbrica mediante bluetooth con el chaleco para poderlo controlar desde los manubrios de mi bicicleta|Puede|10 días|Presionar el botón "<" en el dispositivo y visualizar que el led izquierdo en el chaleco se enciende|Luis Negrete|
+|HU06|Yo como usuario quiero que se muestre la hora en el dispositivo.|Debe|2 días|El usuario visualizará la hora en la pantalla del dispositivo|Pedro Martínez|
+|HU07|Yo como usuario quiero que el dispositivo mida mi actividad física para saber cuál fue mi recorrido diario.|Estaría bien|7 días|Presionar el botón "Ver mi actividad" y visualizar los kilometros recorridos.|Paola Patlán|
+|HU08|Yo como usuario quiero compartir mi ubicación a otros dispositivos para que sepan dónde estoy.|Estaría bien|8 días|Presionar el botón "Ver ubicación" y después "Compartir ubicación"|María Mendoza|
 
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
