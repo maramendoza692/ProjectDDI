@@ -18,9 +18,9 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 ## Software utilizado
 | Id | Software | Version | Tipo |
 |----|----------|---------|------|
-| S1 | Fritzing |         |Modelado|
+| S1 | Fritzing |     0.9.3    |Modelado|
 | S2 | Wokwi    |         | Programación / Modelado |
-| S3 | Node-RED |         |Programación |
+| S3 | Node-RED |    3.0.2     |Programación |
 | S4 | Tinkercad |         |Modelado 3D |
 
 ## Historias de Usuario
@@ -39,7 +39,7 @@ El presente proyecto busca disminuir los accidentes viales de los ciclistas por 
 - Coloca la fotografia de tu prototipo dibujado a lapiz
 ![Imagen de WhatsApp 2023-06-03 a las 00 55 32](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/c1fd84f6-b6bf-4043-98c8-66b3efdea064)
 
-## Prototipo en Fitzing
+## Prototipo en Fritzing
 
 ## Placa PCB
 
