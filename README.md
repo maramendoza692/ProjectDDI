@@ -37,11 +37,11 @@ Osvaldo Baeza - Ciclista
 ## Historias de Usuario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-|HU01|Yo como usuario quiero que el dispositivo me permita mostrar la dirección (izquierda o derecha) a la que me dirijo para evitar accidentes con automoviles.|Debe|4 días|El usuario utiliza un chaleco con luces led y una pantalla integrada para seleccionar las operaciones predeterminadas de dirección|Luis Negrete|
+|HU01|Yo como usuario quiero que el dispositivo me permita mostrar la dirección (izquierda o derecha) a la que me dirijo para evitar accidentes con automoviles.|Debe|4 días|El usuario utiliza un dispositivo con luces led y una pantalla integrada para seleccionar las operaciones predeterminadas de dirección|Luis Negrete|
 |HUO2|Yo como usuario quiero que el dispositivo esté en la parte delantera de mi bicicleta y me notifique mediante un sonido cuando estoy muy cerca de un automóvil para tomar mi distancia y evitar accidentes.|Debe |4 días| Posicionar un objeto un objeto a 3 metros o menos del dispositivo, el sensor ultrasónico enviará una indicación al buzzer para que suene.|Pedro Martínez |
 |HU03|Yo como usuario quiero visualizar en la pantalla del dispositivo la temperatura y humedad|Debe|3 días|Visualizar la temperatura y humedad en la pantalla, acercar un objeto con fuego como un encendedor cerca del sensor para visualizar el cambio de la temperatura en la pantalla. Realizar la misma pueba con un objeto que altere la humedad| Paola Patlán |
 |HU04|Yo como usuario quiero visualizar mi ubicación en la pantalla mediante un mapa para saber dónde me encuentro| Puede |10 días| Seleccionar el botón "Ver ubicación" en la pantalla del dispositivo, en seguida, visualizar el mapa y la ubicación actual. Avanzar un par de metros y observar que la ubicción cambia |María Mendoza|
-|HU05|Yo como usuario quiero que el dispositivo tenga conexión inhalámbrica mediante bluetooth con el chaleco para poderlo controlar desde los manubrios de mi bicicleta|Puede|10 días|Presionar el botón "<" en el dispositivo y visualizar que el led izquierdo en el chaleco se enciende|Luis Negrete|
+|HU05|Yo como usuario quiero que el dispositivo sea recargable para cargarlo antes de salir en mi bicicleta|Debe|5 días|Conectar el dispositivo a la corriente electrica y verificar que esté cargando|Luis Negrete|
 |HU06|Yo como usuario quiero que se muestre la hora en el dispositivo.|Debe|2 días|El usuario visualizará la hora en la pantalla del dispositivo|Pedro Martínez|
 |HU07|Yo como usuario quiero que el dispositivo mida mi actividad física para saber cuál fue mi recorrido diario.|Estaría bien|7 días|Presionar el botón "Ver mi actividad" y visualizar los kilometros recorridos.|Paola Patlán|
 |HU08|Yo como usuario quiero compartir mi ubicación a otros dispositivos para que sepan dónde estoy.|Estaría bien|8 días|Presionar el botón "Ver ubicación" y después "Compartir ubicación"|María Mendoza|
@@ -52,7 +52,13 @@ Osvaldo Baeza - Ciclista
 
 ## Prototipo en Fritzing
 
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/b0afe428-e119-42b0-9ca5-d090fe23aae2)
+
+
 ## Placa PCB
+
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/fe32acaf-4333-4bd0-8362-fb37d197e085)
+
 
 ## Prototipo en 3D
 - Imagen de prototipo realizado en tinkercad
