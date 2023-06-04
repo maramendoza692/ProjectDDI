@@ -21,7 +21,7 @@ Osvaldo Baeza - Ciclista
 |4| Buzzer| Altavoz que permite convertir una señal eléctrica en una onda de sonido |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8971c075-c206-46ee-b3ac-b7f5571011f7" width= "200px"/> |$47| 1|
 |5| Resistencias 220 Ohms| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
 |6| Led | 2 Piezas Max7219 Matriz De Leds 8x8 Arduino Led Pic|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/9a3bacc9-ee5d-4f1e-b610-eaf287839f64" width= "200px"/>| $129|1|
-|7| Módulo RTC DS3231 Reloj de Tiempo Real |Permite registrar en todo momento fecha, día de la semana y hora|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/1aeaa458-c1c9-4756-8a42-0b4fbd500df4" width= "200px"/>| $74|1|
+
 
 
 
