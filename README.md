@@ -15,24 +15,26 @@ Osvaldo Baeza - Ciclista
 ## Componentes empleados
 | No. | Componente | Descripción | Img | Costo | Cantidad |
 |-----|------------|-------------|-----|-------|----------|
-|1|Placa de desarrollo ESP32| Placa de desarrollo ESP32 con pantalla táctil de 2.8 pulgadas |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/6606e7d5-c1ad-4ccd-b253-dcaa5afed3a0" width= "200px"/> |$169 | 1 |
-|2|Sensor ultrasónico HCS|Sensor para detectar proximidad|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/cb4e3f10-a399-4131-ac95-e7b542e64004" width= "200px"/> |$59| 1 |
-|3| DHT22| Sensor De Temperatura Y Humedad Dht22 |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/ec8a686b-40bf-4e83-9a69-efaddb7d0cae" width= "200px"/> |$99| 1|
+|1|Placa de desarrollo ESP32| Placa de desarrollo ESP32 con pantalla táctil de 2.8 pulgadas. CPU de doble núcleo y una frecuencia de reloj de 240 MHz. Integra periféricos de recursos, SDO de alta velocidad, SP, UART y otras funciones, y admite la descarga automática. |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/6606e7d5-c1ad-4ccd-b253-dcaa5afed3a0" width= "200px"/> |$169 | 1 |
+|2|Sensor ultrasónico HCS|Sensor para detectar proximidad. 4 pines (VCC, Trig, Echo, GND)|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/cb4e3f10-a399-4131-ac95-e7b542e64004" width= "200px"/> |$59| 1 |
+|3| DHT22| Sensor De Temperatura Y Humedad Dht22. Voltaje de Operación: 3V - 6V DC. Rango de medición de temperatura: -40°C a 80 °C. Precisión de medición de temperatura: <±0.5 °C. |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/ec8a686b-40bf-4e83-9a69-efaddb7d0cae" width= "200px"/> |$99| 1|
 |4| Buzzer| Altavoz que permite convertir una señal eléctrica en una onda de sonido |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8971c075-c206-46ee-b3ac-b7f5571011f7" width= "200px"/> |$47| 1|
 |5| Resistencias 220 Ohms| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
-|6| Led | 2 Piezas Max7219 Matriz De Leds 8x8 Arduino Led Pic|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/9a3bacc9-ee5d-4f1e-b610-eaf287839f64" width= "200px"/>| $129|1|
+|6| Led | 2 Piezas Max7219 Matriz De Leds 8x8 Arduino Led Pic. 64 luces led´s agrupados por 8 columnas de 8 led´s cada una, cada led tiene  un diámetro de 3mm con dimensiones de 32mm por 32mm.|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/9a3bacc9-ee5d-4f1e-b610-eaf287839f64" width= "200px"/>| $129|1|
+|7| ESP32| Tarjeta de desarrollo ESP32 de 30 pines, trae integrado Wi-Fi, Bluetooth y BLE (Bluetooth Low Energy).|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8e9f544f-3a6d-4e98-87c7-2c9083a0b6c6" width= "200px"/>|$158| 1|
 
 
 
 
 
 ## Software utilizado
-| Id | Software | Version | Tipo |
-|----|----------|---------|------|
-| S1 | Fritzing |     0.9.3    |Modelado|
-| S2 | Wokwi    |         | Programación / Modelado |
-| S3 | Node-RED |    3.0.2     |Programación |
-| S4 | Tinkercad |         |Modelado 3D |
+| Id | Software | Version | Tipo |Funcionalidad|
+|----|----------|---------|------|-------------|
+| 1 | Fritzing | 0.9.3 |Licencia libre|Modelado|
+| 2 | Wokwi    | N/A | Licencia libre | Programación / Modelado|
+| 3 | Node-RED | 3.0.2 | Licencia libre| Programación|
+| 4 | Tinkercad | N/A |Licencia libre|Modelado 3D |
+| 5 | Librería NewPing |N/A|Licencia libre|Para sensores ultrasónicos, incluyendo el HC-SR04.|
 
 ## Historias de Usuario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
