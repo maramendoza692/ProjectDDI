@@ -42,10 +42,10 @@ Osvaldo Baeza - Ciclista
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
 |HU01|Yo como ciclista quiero que el dispositivo me permita mostrar la dirección (izquierda o derecha) a la que me dirijo para evitar accidentes con automoviles.|Debe| 1 |El usuario utiliza un dispositivo con luces led y una pantalla integrada para seleccionar las operaciones predeterminadas de dirección|Luis Negrete|
-|HUO2|Yo como ciclista quiero que el dispositivo esté en la parte delantera de mi bicicleta y me notifique mediante un sonido cuando estoy muy cerca de un automóvil para tomar mi distancia y evitar accidentes.|Debe |1 medio| Posicionar un objeto un objeto a 3 metros o menos del dispositivo, el sensor ultrasónico enviará una indicación al buzzer para que suene.|Pedro Martínez |
+|HUO2|Yo como ciclista quiero que el dispositivo esté en la parte delantera de mi bicicleta y me notifique mediante un sonido cuando estoy muy cerca de un automóvil para tomar mi distancia y evitar accidentes.|Debe |1 y medio| Posicionar un objeto un objeto a 3 metros o menos del dispositivo, el sensor ultrasónico enviará una indicación al buzzer para que suene.|Pedro Martínez |
 |HU03|Yo como ciclista quiero visualizar en la pantalla del dispositivo la temperatura y humedad|Debe|1 |Visualizar la temperatura y humedad en la pantalla, acercar un objeto con fuego como un encendedor cerca del sensor para visualizar el cambio de la temperatura en la pantalla. Realizar la misma pueba con un objeto que altere la humedad| Paola Patlán |
 |HU04|Yo como ciclista quiero visualizar mi ubicación en la pantalla mediante un mapa para saber dónde me encuentro| Puede |8| Seleccionar el botón "Ver ubicación" en la pantalla del dispositivo, en seguida, visualizar el mapa y la ubicación actual. Avanzar un par de metros y observar que la ubicción cambia |María Mendoza|
-|HU05|Yo como ciclista quiero que el dispositivo sea recargable para cargarlo antes de salir en mi bicicleta|Debe|5 días|Conectar el dispositivo a la corriente electrica y verificar que esté cargando|Luis Negrete|
+|HU05|Yo como ciclista quiero que el dispositivo sea recargable para cargarlo antes de salir en mi bicicleta|Debe|3 |Conectar el dispositivo a la corriente electrica y verificar que esté cargando|Luis Negrete|
 |HU06|Yo como ciclista quiero que se muestre la hora en el dispositivo.|Debe|1/2|El usuario visualizará la hora en la pantalla del dispositivo|Pedro Martínez|
 |HU07|Yo como ciclista quiero que el dispositivo mida mi actividad física para saber cuál fue mi recorrido diario.|Estaría bien|4 |Presionar el botón "Ver mi actividad" y visualizar los kilometros recorridos.|Paola Patlán|
 |HU08|Yo como ciclista quiero compartir mi ubicación a otros dispositivos para que sepan dónde estoy.|Estaría bien|6|Presionar el botón "Ver ubicación" y después "Compartir ubicación"|María Mendoza|
@@ -55,8 +55,7 @@ Osvaldo Baeza - Ciclista
 1 Punto de esfuerzo es igual a desarrollo de un Login.
 
 ## Prototipo en dibujo
-- Coloca la fotografia de tu prototipo dibujado a lapiz
-![Imagen de WhatsApp 2023-06-03 a las 00 55 32](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/c1fd84f6-b6bf-4043-98c8-66b3efdea064)
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5e53288f-e11a-48bb-a677-c403db53b844)
 
 ## Prototipo en Fritzing
 
