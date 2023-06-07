@@ -1,6 +1,8 @@
 # ProjectVestSafe3000
 ## Objetivo del proyecto
-El presente proyecto busca disminuir los accidentes viales de los ciclistas por medio de un chaleco mejorado, al cual se le integra TI para realizar predeterminas acciones que aumenten su seguridad. 
+El proyecto VestSafe3000 busca potencialmente disminuir los accidentes viales de los ciclistas durante sus recorridos. Se espera diseñar y construir un chaleco inteligente agregando la innovación de TI, tomando en cuenta las herramientas inteligentes necesarias para los ciclistas. Con VestSafe3000 se planea manejar por medio de una pantalla tactil en donde se encuentren todas las opciones existentes y que funciona como un control remoto del chaleco que le ordena que hacer para que así en la pantalla tactil se reciba retroalimentación de lo que se este haciendo en ese momento. 
+Todo esto se logrará por medio de sensores implementados en el chaleco y conectados a la pantalla tactil, se espera generar un sistema de direccionales, además de implementación de sensor de temperatura, entre otras cosas.
+
 
 ## Beneficiario
 Osvaldo Baeza - Ciclista
