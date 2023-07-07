@@ -1,11 +1,14 @@
-# ProjectVestSafe3000
+# TACOMANDI
 ## Objetivo del proyecto
-El proyecto VestSafe3000 busca potencialmente disminuir los accidentes viales de los ciclistas durante sus recorridos. Se espera diseñar y construir un chaleco inteligente agregando la innovación de TI, tomando en cuenta las herramientas inteligentes necesarias para los ciclistas. Con VestSafe3000 se planea manejar por medio de una pantalla tactil en donde se encuentren todas las opciones existentes y que funciona como un control remoto del chaleco que le ordena que hacer para que así en la pantalla tactil se reciba retroalimentación de lo que se este haciendo en ese momento. 
-Todo esto se logrará por medio de sensores implementados en el chaleco y conectados a la pantalla tactil, se espera generar un sistema de direccionales, además de implementación de sensor de temperatura, entre otras cosas.
+Tacomandi tiene como objetivo crear un mandil diseñado específicamente para taqueros y cocineros que se enfrentan a una alta demanda de pedidos diarios. Este mandil inteligente busca proporcionar un entorno de trabajo más seguro y eficiente al alertar a los usuarios sobre situaciones potencialmente peligrosas y brindarles acceso rápido a la información de los pedidos pendientes.
 
+## Objetivos específicos:
+Mejorar la seguridad y el bienestar de los taqueros y cocineros al proporcionar alertas en tiempo real sobre situaciones peligrosas.
+Optimizar la gestión de pedidos mediante una interfaz gráfica intuitiva y de fácil acceso, lo que resultará en una mayor eficiencia y satisfacción del cliente.
+Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir fugas de gas.
 
 ## Beneficiario
-Osvaldo Baeza - Ciclista
+ - 
 
 ## Integrantes
 - Pedro Emmanuel Martinez Rodriguez 
@@ -18,13 +21,12 @@ Osvaldo Baeza - Ciclista
 | No. | Componente | Descripción | Img | Costo | Cantidad |
 |-----|------------|-------------|-----|-------|----------|
 |1|Placa de desarrollo ESP32| Placa de desarrollo ESP32 con pantalla táctil de 2.8 pulgadas. CPU de doble núcleo y una frecuencia de reloj de 240 MHz. Integra periféricos de recursos, SDO de alta velocidad, SP, UART y otras funciones, y admite la descarga automática. |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/6606e7d5-c1ad-4ccd-b253-dcaa5afed3a0" width= "200px"/> |$169 | 1 |
-|2|Sensor ultrasónico HCS|Sensor para detectar proximidad. 4 pines (VCC, Trig, Echo, GND)|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/cb4e3f10-a399-4131-ac95-e7b542e64004" width= "200px"/> |$59| 1 |
-|3| DHT22| Sensor De Temperatura Y Humedad Dht22. Voltaje de Operación: 3V - 6V DC. Rango de medición de temperatura: -40°C a 80 °C. Precisión de medición de temperatura: <±0.5 °C. |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/ec8a686b-40bf-4e83-9a69-efaddb7d0cae" width= "200px"/> |$99| 1|
-|4| Buzzer| Altavoz que permite convertir una señal eléctrica en una onda de sonido |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8971c075-c206-46ee-b3ac-b7f5571011f7" width= "200px"/> |$47| 1|
+|2| Sensor de temperatura| Modulo Ky-001 Sensor De Temperatura |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/42fcd6e5-30ac-4b3a-b80c-49a1fb623dbf" width= "200px"/> |$42| 1|
+|3| Buzzer| Altavoz que permite convertir una señal eléctrica en una onda de sonido |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8971c075-c206-46ee-b3ac-b7f5571011f7" width= "200px"/> |$47| 1|
+|4| ESP32| Tarjeta de desarrollo ESP32 de 30 pines, trae integrado Wi-Fi, Bluetooth y BLE (Bluetooth Low Energy).|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8e9f544f-3a6d-4e98-87c7-2c9083a0b6c6" width= "200px"/>|$158| 1|
 |5| Resistencias 220 Ohms| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
-|6| Led | 2 Piezas Max7219 Matriz De Leds 8x8 Arduino Led Pic. 64 luces led´s agrupados por 8 columnas de 8 led´s cada una, cada led tiene  un diámetro de 3mm con dimensiones de 32mm por 32mm.|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/9a3bacc9-ee5d-4f1e-b610-eaf287839f64" width= "200px"/>| $129|1|
-|7| ESP32| Tarjeta de desarrollo ESP32 de 30 pines, trae integrado Wi-Fi, Bluetooth y BLE (Bluetooth Low Energy).|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8e9f544f-3a6d-4e98-87c7-2c9083a0b6c6" width= "200px"/>|$158| 1|
-
+|6| Sensor de flama| Sensor De Flama |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/3116347d-9819-483d-9629-1caf9c7533c0" width= "200px"/> |$49| 1|
+|5| Sensor de gas| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
 
 
 
