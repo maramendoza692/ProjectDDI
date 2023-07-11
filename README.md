@@ -26,7 +26,7 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 |4| ESP32| Tarjeta de desarrollo ESP32 de 30 pines, trae integrado Wi-Fi, Bluetooth y BLE (Bluetooth Low Energy).|<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/8e9f544f-3a6d-4e98-87c7-2c9083a0b6c6" width= "200px"/>|$158| 1|
 |5| Resistencias 220 Ohms| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
 |6| Sensor de flama| Sensor De Flama |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/3116347d-9819-483d-9629-1caf9c7533c0" width= "200px"/> |$49| 1|
-|5| Sensor de gas| Paquete de resistencias fabricadas con una alambre conductor de una resistividad alta  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5f5fda94-8ba5-4405-94b3-ff202b49117d" width= "200px"/> |$81| 1|
+|5| Sensor de gas| MQ-5 Detección de: Gas LP, Metano/Gas Natural, Hidrógeno, Alcohol y Humo. Alta sensibilidad al: Gas LP y Metano/Gas Natural  |<img src="https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/853bb66a-0be2-41f3-ac98-3dfc73e340fc" width= "200px"/> |$81| 1|
 
 
 
