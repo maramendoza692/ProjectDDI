@@ -54,21 +54,9 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 1 Punto de esfuerzo es igual a desarrollo de un Login.
 
-## Prototipo en dibujo
-![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/5e53288f-e11a-48bb-a677-c403db53b844)
-
-## Prototipo en Fritzing
-
-![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/b0afe428-e119-42b0-9ca5-d090fe23aae2)
-
-
-## Placa PCB
-
-![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/fe32acaf-4333-4bd0-8362-fb37d197e085)
-
-
 ## Prototipo en 3D
 - Imagen de prototipo realizado en tinkercad
-![Captura de pantalla 2023-06-03 142936](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/9e7a4027-dd06-4565-81cf-60c1d9dab557)
-![Captura de pantalla 2023-06-03 142947](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/2e41cbf7-1afe-4a95-b7d1-6e0416e918e3)
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/e43656cf-49b0-4d67-9eb5-f18bc8fd497f)
+
+
 
