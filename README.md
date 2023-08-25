@@ -8,7 +8,7 @@ Optimizar la gestión de pedidos mediante una interfaz gráfica intuitiva y de f
 Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir fugas de gas.
 
 ## Beneficiario
- - Ana Luisa Muñoz Hernández
+ - 
 
 ## Integrantes
 - Pedro Emmanuel Martinez Rodriguez 
@@ -67,9 +67,10 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 ## Imagen del mandil
 
+
 ## Aplicación web
 
-![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/e34dbe7d-f2df-4e82-b8e7-7f2d6d4ef68d)
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/ba913c2d-7569-4453-87ac-3e457bdbc1cc)
 
 
 ## Dashboard en Grafana
@@ -82,6 +83,11 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 ## Vídeo de aceptación del proyecto
 
 ## Código fuente
+
+Funcionamiento de los sensores: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES.py
+Funcionamiento de la oled para visualizar pedidos: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/PEDIDOS.py
+Flow del crud de la aplicación web: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/CRUD%20%20Tacomandi.json
+Flow del broker mqtt: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES%20Tacomandi.json 
 
 
 
