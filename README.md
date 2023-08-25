@@ -8,7 +8,7 @@ Optimizar la gestión de pedidos mediante una interfaz gráfica intuitiva y de f
 Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir fugas de gas.
 
 ## Beneficiario
- - 
+ - María Auxiliadora Hernández R
 
 ## Integrantes
 - Pedro Emmanuel Martinez Rodriguez 
@@ -67,6 +67,10 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 ## Imagen del mandil
 
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/b0a6f4b9-dd22-407d-aa93-85275c112d46)
+
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/073e1fd1-a49c-4028-b462-22d9c36f6580)
+
 
 ## Aplicación web
 
@@ -80,14 +84,18 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 ## Carta de aceptación del proyecto firmada por la beneficiaria
 
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/33b539f8-e1e3-44e1-965e-08cf0114072e)
+
 ## Vídeo de aceptación del proyecto
+
+https://drive.google.com/drive/folders/1qVjTsDf6Mc0yx3wUxBGgX2C_--_Lmx8n?usp=drive_link 
 
 ## Código fuente
 
-Funcionamiento de los sensores: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES.py
-Funcionamiento de la oled para visualizar pedidos: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/PEDIDOS.py
-Flow del crud de la aplicación web: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/CRUD%20%20Tacomandi.json
-Flow del broker mqtt: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES%20Tacomandi.json 
+Funcionamiento de los sensores: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES.py                  
+Funcionamiento de la oled para visualizar pedidos: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/PEDIDOS.py        
+Flow del crud de la aplicación web: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/CRUD%20%20Tacomandi.json      
+Flow del broker mqtt: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES%20Tacomandi.json         
 
 
 
