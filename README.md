@@ -74,11 +74,12 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 ## Dashboard en Grafana
 
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/c0db028b-f037-44a5-986c-8c84ab44d813)
+
+
 ## Carta de aceptación del proyecto firmada por la beneficiaria
 
 ## Vídeo de aceptación del proyecto
-
-## Vídeo demostrativo
 
 ## Código fuente
 
