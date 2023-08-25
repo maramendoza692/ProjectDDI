@@ -1,0 +1,194 @@
+[
+    {
+        "id": "697aac718a0bff78",
+        "type": "tab",
+        "label": "Sensores",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2e4bf43c3932c60a",
+        "type": "debug",
+        "z": "697aac718a0bff78",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a543275dca4c4650",
+        "type": "mqtt in",
+        "z": "697aac718a0bff78",
+        "name": "",
+        "topic": "gas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "eddf0268a4ee2c44",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "2e4bf43c3932c60a",
+                "e944c3e68642f825"
+            ]
+        ]
+    },
+    {
+        "id": "475856fc08862341",
+        "type": "mysql",
+        "z": "697aac718a0bff78",
+        "mydb": "f0f15205797a41fa",
+        "name": "",
+        "x": 710,
+        "y": 420,
+        "wires": [
+            [
+                "c7da5d2fb88bf770"
+            ]
+        ]
+    },
+    {
+        "id": "c7da5d2fb88bf770",
+        "type": "debug",
+        "z": "697aac718a0bff78",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e944c3e68642f825",
+        "type": "function",
+        "z": "697aac718a0bff78",
+        "name": "INSERT_GAS",
+        "func": "msg.topic = \"INSERT INTO `sensor_gas` (`value` ) VALUES(\" + msg.payload + \");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "475856fc08862341"
+            ]
+        ]
+    },
+    {
+        "id": "9ababed79f77f7a0",
+        "type": "function",
+        "z": "697aac718a0bff78",
+        "name": "INSERT_TEMPERATURA",
+        "func": "msg.topic = \"INSERT INTO `sensor_temperatura` (`value`) VALUES(\" + msg.payload +\");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "475856fc08862341"
+            ]
+        ]
+    },
+    {
+        "id": "e59d5adde37f15fd",
+        "type": "mqtt in",
+        "z": "697aac718a0bff78",
+        "name": "",
+        "topic": "temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "eddf0268a4ee2c44",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "9ababed79f77f7a0",
+                "959a8c10612016c2"
+            ]
+        ]
+    },
+    {
+        "id": "959a8c10612016c2",
+        "type": "debug",
+        "z": "697aac718a0bff78",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "eddf0268a4ee2c44",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.137.147",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "3000",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f0f15205797a41fa",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "tacomandi",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

@@ -1,0 +1,449 @@
+[
+    {
+        "id": "45b616289e635fa6",
+        "type": "tab",
+        "label": "Crud",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e08d63e5091940f8",
+        "type": "http in",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "url": "/update",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "c3d25329d62eda1f"
+            ]
+        ]
+    },
+    {
+        "id": "7f2c7cc715f30bba",
+        "type": "http response",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 882,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c4c7125622f9c740",
+        "type": "template",
+        "z": "45b616289e635fa6",
+        "name": "Web Template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"en-GB\">\n<head>\n    <title>Tacomandi</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css\" />\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css\" />\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css\" />\n    <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js\"></script>\n    <script type=\"text/javascript\">\n        $(function () {\n            console.log(\"CRUD Tacomandi\");\n\n            var db = {{#payload}}{{{.}}}{{/payload}};\n\n            $(\"#jsgrid\").jsGrid({\n                width: \"100%\",\n                inserting: true,\n                editing: true,\n                sorting: true,\n                paging: true,\n\n                data: db,\n\n                fields: [\n                    { title:\"ID\", name: \"id\", type: \"text\", width: 50 },\n                    { title:\"Pedido\", name: \"pedido\", type: \"text\", width: 50 },\n                     { title:\"Record At\", name: \"record_at\", type:\"text\", width: 25},\n                    { type: \"control\" }\n                ],\n           \n                controller: {\n                    insertItem: function(item) {\n                        return $.ajax({\n                            type: \"POST\",\n                            url: \"/insert\",\n                            data: item\n                        });\n                    },\n                    updateItem: function(item) {\n                       return $.ajax({\n                            type: \"PUT\",\n                            url: \"/update\",\n                            data: item\n                        });\n                    },\n                    deleteItem: function(item) {\n                        return $.ajax({\n                            type: \"DELETE\",\n                            url: \"/delete\",\n                            data: item\n                        });\n                    }\n                }   \n            });\n        });\n    </script>\n    <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/mqttws31.min.js\"></script>\n    <script type=\"text/javascript\">\n        $(function () {\n            // Configuración MQTT\n            var client = new Paho.MQTT.Client(\"192.168.137.147\", Number(1883), \"\");\n            \n            client.onConnectionLost = function (responseObject) {\n        if (responseObject.errorCode !== 0) {\n            console.log(\"Conexión MQTT perdida: \" + responseObject.errorMessage);\n        }\n    };\n\n    client.onMessageArrived = function (message) {\n        if (message.destinationName === \"sound_detected\" && message.payloadString === \"true\") {\n            // Realiza una solicitud para eliminar el último registro\n            $.ajax({\n                type: \"DELETE\",\n                url: \"/index\", \n                success: function(response) {\n                    console.log(\"Registro eliminado con éxito: \", response);\n                },\n                error: function(error) {\n                    console.error(\"Error al eliminar el registro: \", error);\n                }\n            });\n        }\n    };\n        });\n    </script>\n</head>\n<body>\n    <nav class=\"navbar navbar-light\" style=\"background-color: #fa996c; text-align: center\">\n        <img src=\"https://i.postimg.cc/t4WmwBnY/logo-tacomandi.png\"></img>\n    </nav>\n    <div class=\"container\">\n        <section class=\"row\">\n            <div class=\"col-md-6\"></div>\n            <div class=\"col-md-6\" id=\"jsgrid\" style=\"background-color: #ffddc9;\">\n            </div>\n        </section>\n    </div>\n</body>\n</html>\n",
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [
+                "500ca08ed81500d5"
+            ]
+        ]
+    },
+    {
+        "id": "844595dda42f93d6",
+        "type": "http in",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "url": "/index",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "b3b30c49a5fe4549"
+            ]
+        ]
+    },
+    {
+        "id": "500ca08ed81500d5",
+        "type": "http response",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 910,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "04fda06f0aa1a5eb",
+        "type": "http response",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "x": 890,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bbb54b10cc0b0d60",
+        "type": "http in",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "url": "/insert",
+        "method": "post",
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "72f6bb36123cf0ba"
+            ]
+        ]
+    },
+    {
+        "id": "6a1084717df73305",
+        "type": "http in",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "url": "/delete",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "a0cee1ee87fed46c"
+            ]
+        ]
+    },
+    {
+        "id": "a8fd5adf61fddc1d",
+        "type": "http response",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c3d25329d62eda1f",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "update-query",
+        "func": "msg.topic = \"UPDATE pedidos SET pedido ='\" + msg.payload.pedido + \"' WHERE id =\"+msg.payload.id+\";\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 342,
+        "y": 260,
+        "wires": [
+            [
+                "c14698c9525af7ac"
+            ]
+        ]
+    },
+    {
+        "id": "72f6bb36123cf0ba",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "insert-query",
+        "func": "msg.topic = \"INSERT INTO pedidos (pedido) VALUES ('\" + msg.payload.pedido + \"');\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "276848960e15ae35"
+            ]
+        ]
+    },
+    {
+        "id": "a0cee1ee87fed46c",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "delete-query",
+        "func": "msg.topic = \"DELETE FROM pedidos WHERE id=\"+msg.payload.id+\";\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "8e841538adc9bae8"
+            ]
+        ]
+    },
+    {
+        "id": "b3b30c49a5fe4549",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "get database",
+        "func": "msg.topic = ` SELECT * FROM pedidos;`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "5f07fd581b5bce8f"
+            ]
+        ]
+    },
+    {
+        "id": "2c979503407a35dc",
+        "type": "json",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "c4c7125622f9c740",
+                "db4bc6bd72772169",
+                "3e14b95be211c239"
+            ]
+        ]
+    },
+    {
+        "id": "26c4c5ba7a633fbe",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "function 4",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48473661c39dbd3b",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "function 5",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "111c48553e6d867e",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "function 6",
+        "func": "msg.payload = msg.result\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 320,
+        "wires": [
+            [
+                "04fda06f0aa1a5eb"
+            ]
+        ]
+    },
+    {
+        "id": "075d9b77fd0f5f45",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "function 7",
+        "func": "msg.payload = msg.result\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 260,
+        "wires": [
+            [
+                "7f2c7cc715f30bba"
+            ]
+        ]
+    },
+    {
+        "id": "540b0a588dd52c0c",
+        "type": "function",
+        "z": "45b616289e635fa6",
+        "name": "function 8",
+        "func": "msg.payload = msg.result\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "a8fd5adf61fddc1d"
+            ]
+        ]
+    },
+    {
+        "id": "5f07fd581b5bce8f",
+        "type": "mysql",
+        "z": "45b616289e635fa6",
+        "mydb": "f0f15205797a41fa",
+        "name": "",
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "2c979503407a35dc"
+            ]
+        ]
+    },
+    {
+        "id": "c14698c9525af7ac",
+        "type": "mysql",
+        "z": "45b616289e635fa6",
+        "mydb": "f0f15205797a41fa",
+        "name": "",
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "075d9b77fd0f5f45"
+            ]
+        ]
+    },
+    {
+        "id": "276848960e15ae35",
+        "type": "mysql",
+        "z": "45b616289e635fa6",
+        "mydb": "f0f15205797a41fa",
+        "name": "",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "111c48553e6d867e"
+            ]
+        ]
+    },
+    {
+        "id": "8e841538adc9bae8",
+        "type": "mysql",
+        "z": "45b616289e635fa6",
+        "mydb": "f0f15205797a41fa",
+        "name": "",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "540b0a588dd52c0c"
+            ]
+        ]
+    },
+    {
+        "id": "db4bc6bd72772169",
+        "type": "debug",
+        "z": "45b616289e635fa6",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3e14b95be211c239",
+        "type": "mqtt out",
+        "z": "45b616289e635fa6",
+        "name": "",
+        "topic": "pedidos",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "eddf0268a4ee2c44",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f0f15205797a41fa",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "tacomandi",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "eddf0268a4ee2c44",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.137.147",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "3000",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
