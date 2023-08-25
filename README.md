@@ -40,6 +40,10 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 | 3 | Node-RED | 3.0.2 | Licencia libre| Programación|
 | 4 | Tinkercad | N/A |Licencia libre|Modelado 3D |
 | 5 | Librería NewPing |N/A|Licencia libre|Para sensores ultrasónicos, incluyendo el HC-SR04.|
+| 6 | Libreria machine|N/A|Licencia Libre| Proporciona una interfaz para interactuar con el hardware del microcontrolador|
+| 7 | Libreria time | N/A | Licencia Libre| ofrece funciones para trabajar con medidas de tiempo.|
+| 8 | Libreria network | N/A| Licencia Libre| permite la configuración y gestión de conexiones de red en el microcontrolador|
+| 9 | Libreria umqtt | N/A| Licencia Libre| está diseñada para admitir el protocolo MQTT (Message Queuing Telemetry Transport) en entornos de MicroPython.| 
 
 ## Historias de Usuario
 | Id | Historia de usuario | Prioridad | Estimación | Cómo probarlo | Responsable | Sprint |
