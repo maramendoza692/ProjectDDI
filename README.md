@@ -8,7 +8,7 @@ Optimizar la gestión de pedidos mediante una interfaz gráfica intuitiva y de f
 Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir fugas de gas.
 
 ## Beneficiario
- - 
+ - Ana Luisa Muñoz Hernández
 
 ## Integrantes
 - Pedro Emmanuel Martinez Rodriguez 
@@ -57,6 +57,29 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 ## Prototipo en 3D
 - Imagen de prototipo realizado en tinkercad
 ![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/e43656cf-49b0-4d67-9eb5-f18bc8fd497f)
+
+## Imagen del mandil
+
+## Aplicación web
+
+![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/90641538/e34dbe7d-f2df-4e82-b8e7-7f2d6d4ef68d)
+
+
+## Dashboard en Grafana
+
+## Carta de aceptación del proyecto firmada por la beneficiaria
+
+## Vídeo de aceptación del proyecto
+
+## Vídeo demostrativo
+
+## Código fuente
+
+
+
+
+
+
 
 
 
