@@ -90,6 +90,9 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 
 https://drive.google.com/drive/folders/1qVjTsDf6Mc0yx3wUxBGgX2C_--_Lmx8n?usp=drive_link 
 
+https://drive.google.com/drive/folders/1jjh7qHoEWR2vn8a_hmsmDuFOnKt6HmE7?usp=sharing
+
+
 ## Código fuente
 
 Funcionamiento de los sensores: https://github.com/maramendoza692/ProjectVetSafeC3000/blob/main/SENSORES.py                  
