@@ -39,6 +39,7 @@ Reducir los desperdicios de recursos al evitar el mal uso de llaves y prevenir f
 |17|Estaño|Sirve para conectar los componentes entre si por medio de la fusión del estaño entre los pines de los componentes.|![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/9504e0d1-dfe5-4765-9874-a6f368e2fee0)|$5|7 m|
 |18|Pasta para soldar|Esta ayuda en los procesos de soldadura y para desoldar al eliminar las películas de óxido que se forman en la superficie de los metales que se están soldando.|![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/034fd006-f9f0-4707-94e0-5d0ed8dda694)|$60|1|
 |19|Pinzas para pelar cable|Sirven para pelar y cortar cables y alambres, tiene varias estaciones para diferente calibre de cables.|![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/7ecdb415-8004-4ca9-9450-4bfb79eb537f)|$180|1|
+|20|Raspberry Pi 4|Es un ordenador de bajo costo y formato compacto destinado al desarrollado para hacer accesible la informática a todos los usuarios. La Raspberry Pi también se caracteriza por ser muy utilizada para desarrollar pequeños prototipos de electrónica|![image](https://github.com/maramendoza692/ProjectVetSafeC3000/assets/87114168/2f7159ab-3baa-4657-b532-dc367d92990f)|$2500|1|
 ## Software utilizado
 | Id | Software | Version | Tipo |Funcionalidad|
 |----|----------|---------|------|-------------|
